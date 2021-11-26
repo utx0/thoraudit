@@ -2,6 +2,9 @@
 
 thoraudit is a simple cli tool for auditing a thornode's running state changes back to the blockheight when it first came online. 
 
+## Install
+
+`cargo install thoraudit`
 
 ## Usage
 
