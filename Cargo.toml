@@ -1,6 +1,6 @@
 [package]
 name = "thoraudit"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Command-line utility to audit the past status of a thornode"
 repository = "https://github.com/utx0/thoraudit"
