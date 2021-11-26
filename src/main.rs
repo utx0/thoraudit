@@ -33,8 +33,6 @@ struct PreflightStatus {
 
 #[tokio::main]
 async fn main() -> anyhow::Result<()> {
-    println!("Hello, bondy finder");
-
     let args: Vec<String> = env::args().collect();
     println!("{:?}", args);
 
