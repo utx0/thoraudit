@@ -1,9 +1,19 @@
 [package]
-name = "bondy"
+name = "thoraudit"
 version = "0.1.0"
 edition = "2021"
+description = "Command-line utility to audit the past status of a thornode"
+repository = "https://github.com/utx0/thoraudit"
+keywords = ["thorchain", "thornode"]
+license = "MIT"
+default-run = "thoraudit"
+authors = [
+    "utx0 <utx0@mettadata.com>",
+]
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "thoraudit"
+path = "src/main.rs"
 
 [dependencies]
 anyhow = "1.0.48"
