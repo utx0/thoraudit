@@ -48,9 +48,9 @@ async fn main() -> anyhow::Result<()> {
     println!("url: {}", url);
 
     let head_responce= reqwest::get(url).await?.json::<NodeInfo>().await?;
-    let mut node_infos = HashMap::new();
+//    let mut node_infos = HashMap::new();
 
-    node_infos.insert(head_responce.status_since, head_responce.clone());
+//    node_infos.insert(head_responce.status_since, head_responce.clone());
 
     println!("{:#?}", head_responce);
 
@@ -58,11 +58,11 @@ async fn main() -> anyhow::Result<()> {
 
     while status_since != 0 {
         let node_info = getblock(node.to_string(), status_since - 1).await?;
-        node_infos.insert(node_info.status_since, node_info.clone());
+//        node_infos.insert(node_info.status_since, node_info.clone());
         status_since = node_info.status_since;
     }
 
-    println!("\n{:#?}",node_infos);
+//     println!("\n{:#?}",node_infos);
     Ok(())
 }
 
